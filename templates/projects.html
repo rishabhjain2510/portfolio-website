@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block title %}Projects - Rishabh Dev Jain{% endblock %}
+
+{% block content %}
+<section id="projects" class="page-section">
+    <div class="text-center mb-12">
+        <h2 class="section-title text-4xl font-bold text-slate-100">My Projects</h2>
+        <p class="mt-4 text-slate-400">Explore my work across four key areas of data and technology</p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <a href="{{ url_for('web_scraping') }}" class="content-card rounded-lg p-6 reveal-text text-left flex flex-col">
+            <div class="mb-4 text-teal-400"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" /></svg></div>
+            <h3 class="font-bold text-xl text-slate-200 mb-2">Web Scraping</h3>
+            <p class="text-slate-400 mt-2 flex-grow">Projects focused on extracting and processing data from various websites and web sources.</p>
+            <div class="mt-4 flex flex-wrap gap-2">
+                <span class="skill-tag">Data Extraction</span><span class="skill-tag">Web Automation</span><span class="skill-tag">API Development</span>
+            </div>
+        </a>
+        <a href="{{ url_for('data_science_projects') }}" class="content-card rounded-lg p-6 reveal-text text-left flex flex-col">
+            <div class="mb-4 text-teal-400"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg></div>
+            <h3 class="font-bold text-xl text-slate-200 mb-2">Data Science</h3>
+            <p class="text-slate-400 mt-2 flex-grow">Analytics and machine learning projects that uncover insights from complex datasets.</p>
+            <div class="mt-4 flex flex-wrap gap-2">
+                <span class="skill-tag">Statistical Analysis</span><span class="skill-tag">Predictive Modeling</span><span class="skill-tag">Data Visualization</span>
+            </div>
+        </a>
+        <a href="{{ url_for('power_bi') }}" class="content-card rounded-lg p-6 reveal-text text-left flex flex-col">
+            <div class="mb-4 text-teal-400"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg></div>
+            <h3 class="font-bold text-xl text-slate-200 mb-2">Power BI</h3>
+            <p class="text-slate-400 mt-2 flex-grow">Interactive dashboards and business intelligence solutions built with Microsoft Power BI.</p>
+            <div class="mt-4 flex flex-wrap gap-2">
+                <span class="skill-tag">Dashboard Design</span><span class="skill-tag">Business Intelligence</span><span class="skill-tag">Data Modeling</span>
+            </div>
+        </a>
+        <a href="{{ url_for('ai_ml') }}" class="content-card rounded-lg p-6 reveal-text text-left flex flex-col">
+            <div class="mb-4 text-teal-400"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg></div>
+            <h3 class="font-bold text-xl text-slate-200 mb-2">AI/Machine Learning</h3>
+            <p class="text-slate-400 mt-2 flex-grow">Artificial intelligence and machine learning projects solving real-world problems.</p>
+            <div class="mt-4 flex flex-wrap gap-2">
+                <span class="skill-tag">Neural Networks</span><span class="skill-tag">NLP Projects</span><span class="skill-tag">Computer Vision</span>
+            </div>
+        </a>
+     </div>
+</section>
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block title %}Web Scraping Projects - Rishabh Dev Jain{% endblock %}
+
+{% block content %}
+<section id="web-scraping" class="page-section">
+    <div class="text-center mb-8">
+        <h2 class="section-title text-4xl font-bold text-slate-100">Web Scraping Projects</h2>
+        <p class="mt-4 text-slate-400">Data extraction and web automation projects showcasing various scraping techniques.</p>
+    </div>
+     <div class="text-center mb-12">
+        <a href="{{ url_for('projects') }}" class="nav-button font-semibold text-teal-300 border border-teal-300 rounded-full py-2 px-6 hover:bg-teal-300/10 transition-colors">&larr; Back to Categories</a>
+    </div>
+    <div class="space-y-8 max-w-4xl mx-auto">
+        <div class="content-card rounded-lg p-6 reveal-text">
+            <div class="flex justify-between items-start">
+                <h3 class="font-bold text-xl text-teal-300">Books to Scrape</h3>
+                <span class="status-badge active">Active</span>
+            </div>
+            <p class="text-slate-400 my-4">A comprehensive web scraping project that extracts book information including titles, prices, and availability from the Books to Scrape website. Features data visualization with bar and pie charts.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="skill-tag">Python</span><span class="skill-tag">BeautifulSoup</span><span class="skill-tag">Pandas</span><span class="skill-tag">Matplotlib</span>
+            </div>
+            <div class="flex flex-wrap gap-4">
+                <button class="project-button py-2 px-4 rounded-md">View Data</button>
+                <button class="project-button py-2 px-4 rounded-md">Bar Chart</button>
+                <button class="project-button py-2 px-4 rounded-md">Pie Chart</button>
+            </div>
+        </div>
+        <div class="content-card rounded-lg p-6 reveal-text">
+            <div class="flex justify-between items-start">
+                <h3 class="font-bold text-xl text-teal-300">Gilson Pipettes</h3>
+                <span class="status-badge completed">Completed</span>
+            </div>
+            <p class="text-slate-400 my-4">Scientific equipment data scraping project focused on extracting Gilson pipette specifications, pricing, and technical details. Includes comprehensive data analysis and CSV export functionality.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="skill-tag">Web Scraping</span><span class="skill-tag">Data Processing</span><span class="skill-tag">CSV Export</span><span class="skill-tag">Data Analysis</span>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

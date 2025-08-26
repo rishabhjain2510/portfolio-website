@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% block title %}CodroidHub - Rishabh Dev Jain{% endblock %}
+
+{% block content %}
+<section id="codroid" class="page-section">
+    <div class="content-card rounded-lg p-8 max-w-5xl mx-auto">
+        <div class="text-center mb-12 reveal-text">
+            <div class="inline-block p-4 px-8 rounded-lg border border-slate-700">
+                <h2 class="text-4xl font-bold text-slate-100">CodroidHub</h2>
+                <p class="font-mono text-teal-400">INTROSPECT | INITIATE | INNOVATE</p>
+            </div>
+        </div>
+        <div class="space-y-12">
+            <div class="reveal-text">
+                <h3 class="text-3xl font-bold text-slate-100 mb-4">About CodroidHub</h3>
+                <p class="text-slate-400 max-w-4xl">CodroidHub Pvt. Ltd. is an e-learning and innovation hub that empowers learners through hands-on tech education. With the belief that the right guidance can help anyone change the world with technology, CodroidHub blends coding, AI, web development, and real-world projects into an immersive learning experience. From summer training and workshops to webinars and industry partnerships, it's a place where curiosity meets creation.</p>
+            </div>
+            <div class="reveal-text">
+                <h3 class="text-3xl font-bold text-slate-100 mb-8">Key Highlights</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div>
+                        <h4 class="font-bold text-xl text-teal-300">Mission & Vision</h4>
+                        <p class="text-slate-400 mt-2">Inspiring people to transform the world with technology through guidance, creativity, and collaboration.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-xl text-teal-300">Learning Ecosystem</h4>
+                        <p class="text-slate-400 mt-2">Practical training programs, events, and workshops designed to turn skills into real-world projects.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-xl text-teal-300">Community Spirit</h4>
+                        <p class="text-slate-400 mt-2">A space driven by passion, teamwork, and a willingness to do things differently.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-xl text-teal-300">Industry Partnerships</h4>
+                        <p class="text-slate-400 mt-2">Collaborations with academic and industry leaders, including Nepal College of Information Technology (NCIT), to strengthen innovation pipelines.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="reveal-text">
+                <h3 class="text-3xl font-bold text-center text-slate-100 mb-6">My Experience with CodroidHub</h3>
+                <div class="space-y-4 text-slate-300 text-center">
+                    <p>I'm currently part of CodroidHub's Data Analytics Program, a job-oriented training designed to turn technical skills into real-world solutions. The program blends Python, SQL, Power BI, Machine Learning, and Cloud Computing with a strong emphasis on hands-on, project-based learning — making every concept immediately applicable.</p>
+                    <p>I'm currently working on a DNA Sequence Analysis Toolkit — a bioinformatics pipeline that processes raw genetic sequences, cleans and analyzes the data, visualizes meaningful patterns, and applies machine learning models to detect potential genetic markers and predict biological traits. This toolkit streamlines the process from raw DNA input to actionable research insights, offering real value in bioinformatics and life sciences.</p>
+                    <p>This journey is more than skill-building — it's training me to think end-to-end, from data collection to deployment, and giving me the confidence to create data-driven solutions that make a tangible impact in healthcare, genetics, and scientific research.</p>
+                </div>
+                 <div class="mt-8 flex justify-center gap-4">
+                    <a href="#" class="project-button py-2 px-6 rounded-md">Explore CodroidHub</a>
+                    <a href="{{ url_for('projects') }}" class="project-button py-2 px-6 rounded-md">View My Projects</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block title %}About Me - Rishabh Dev Jain{% endblock %}
+
+{% block content %}
+<section id="about" class="page-section">
+    <div class="text-center mb-12">
+        <h2 class="section-title text-4xl font-bold text-slate-100">About Me</h2>
+    </div>
+    <div class="max-w-4xl mx-auto space-y-12">
+        <div class="content-card rounded-lg p-8 reveal-text">
+            <h3 class="font-bold text-2xl text-slate-100 mb-6">Who I Am</h3>
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <img src="https://placehold.co/150x150/1c1c1c/5eead4?text=RDJ" alt="Rishabh Dev Jain" class="w-32 h-32 rounded-full object-cover border-2 border-teal-400/50">
+                <p class="text-slate-300 leading-relaxed">I'm Rishabh Dev Jain — a biotechnology student with a knack for turning raw data into actionable insights. I bridge science and tech, combining data analytics, machine learning, and web development to create tools that solve real problems. I believe in mixing curiosity with execution — because ideas only matter when they're built. I'm equally at home debugging code at midnight or deep-diving into research papers with a coffee in hand.</p>
+            </div>
+        </div>
+        <div class="content-card rounded-lg p-8 reveal-text">
+            <h3 class="font-bold text-2xl text-slate-100 mb-6">What I Do</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <h4 class="font-bold text-teal-300">Data Analytics</h4>
+                    <p class="text-sm text-slate-400 mt-2">Python, Pandas, NumPy, SQL, Power BI</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-teal-300">Machine Learning</h4>
+                    <p class="text-sm text-slate-400 mt-2">Predictive Modeling & AI-driven Insights</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-teal-300">Web Development</h4>
+                    <p class="text-sm text-slate-400 mt-2">HTML, CSS, JavaScript, Flask</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-teal-300">Bioinformatics</h4>
+                    <p class="text-sm text-slate-400 mt-2">Biopython, BLAST</p>
+                </div>
+            </div>
+        </div>
+        <div class="content-card rounded-lg p-8 reveal-text">
+            <h3 class="font-bold text-2xl text-slate-100 mb-6">What I'm Working On</h3>
+            <p class="text-slate-300 leading-relaxed">Right now, I'm developing projects that bridge AI, bioinformatics, and data analytics — from DNA sequence analysis tools to AI-powered dashboards. Alongside that, I'm refining my skills in Python, SQL, Power BI, and machine learning while exploring personalized medicine and predictive analytics. My goal? To build tools that make complex data insightful, actionable, and impactful.</p>
+        </div>
+        <div class="content-card rounded-lg p-8 reveal-text">
+            <h3 class="font-bold text-2xl text-slate-100 mb-6">Beyond the Code</h3>
+            <p class="text-slate-300 leading-relaxed">When I'm not coding or studying, you'll probably find me at the gym chasing the perfect lift, watching Formula 1 races, diving into anime marathons, or experimenting in the kitchen. I believe in lifelong learning, staying curious, and keeping a sense of humor no matter how complex the challenge.</p>
+        </div>
+        <div class="text-center reveal-text">
+            <h3 class="font-bold text-3xl text-slate-100">Let's Connect!</h3>
+            <p class="text-slate-400 mt-4 max-w-xl mx-auto">If you're passionate about data, tech, or just love discussing innovative ideas over coffee, let's connect!</p>
+            <div class="mt-6 flex justify-center gap-4">
+                <button class="project-button py-2 px-6 rounded-md">Email Me</button>
+                <button class="project-button py-2 px-6 rounded-md">LinkedIn</button>
+                <button class="project-button py-2 px-6 rounded-md">GitHub</button>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

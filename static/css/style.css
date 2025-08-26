@@ -1,0 +1,126 @@
+/* Universal cursor rule to fix double cursor issue */
+* {
+    cursor: none !important;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #1c1c1c; /* Stone Black */
+    color: #cbd5e1; /* slate-300 */
+}
+
+/* Custom Cursor Style */
+#custom-cursor {
+    position: fixed;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #2dd4bf; /* teal-400 */
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: all 0.2s ease-out;
+    z-index: 9999;
+}
+
+#custom-cursor.hover {
+    transform: translate(-50%, -50%) scale(2);
+    background-color: rgba(45, 212, 191, 0.2);
+}
+
+/* Sci-fi grid background */
+.grid-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(rgba(100, 116, 139, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(100, 116, 139, 0.1) 1px, transparent 1px);
+    background-size: 40px 40px;
+    z-index: -1;
+}
+
+/* Capsule Nav Link Style */
+.nav-link {
+    transition: color 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-weight: 500;
+    position: relative;
+    z-index: 2;
+}
+
+.nav-link:not(.active):hover {
+    color: #2dd4bf; /* teal-400 */
+}
+
+/* Active navigation link style */
+.nav-link.active {
+    color: #1c1c1c; /* Stone Black */
+}
+
+/* Sliding highlight for nav bar */
+#nav-slider {
+    position: absolute;
+    top: 0.5rem; /* Corresponds to p-2 */
+    height: calc(100% - 1rem); /* Corresponds to p-2 */
+    background-color: #2dd4bf; /* teal-400 */
+    border-radius: 9999px;
+    z-index: 1;
+}
+
+.content-card {
+    background-color: rgba(45, 45, 45, 0.5); /* Dark gray with transparency */
+    border: 1px solid rgba(100, 116, 139, 0.3);
+    backdrop-filter: blur(8px);
+    transition: all 0.3s ease;
+}
+.content-card:hover {
+    border-color: rgba(45, 212, 191, 0.5);
+    background-color: rgba(45, 45, 45, 0.8);
+    box-shadow: 0 0 20px rgba(45, 212, 191, 0.2);
+}
+
+.rdj-logo {
+    transition: all 0.3s ease;
+}
+.rdj-logo:hover {
+    transform: scale(1.05);
+}
+
+.skill-tag {
+    background-color: rgba(45, 212, 191, 0.1);
+    color: #5eead4; /* teal-300 */
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.status-badge {
+    padding: 0.125rem 0.5rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+.status-badge.active {
+    background-color: rgba(45, 212, 191, 0.1);
+    color: #5eead4;
+}
+.status-badge.completed {
+    background-color: rgba(132, 204, 22, 0.1);
+    color: #a3e635;
+}
+
+.project-button {
+    background-color: rgba(100, 116, 139, 0.2);
+    border: 1px solid rgba(100, 116, 139, 0.4);
+    color: #94a3b8;
+    transition: all 0.3s ease;
+}
+.project-button:hover {
+    background-color: rgba(45, 212, 191, 0.2);
+    border-color: #2dd4bf;
+    color: #5eead4;
+}

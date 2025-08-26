@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Power BI Projects - Rishabh Dev Jain{% endblock %}
+
+{% block content %}
+<section id="power-bi" class="page-section">
+    <div class="text-center mb-8">
+        <h2 class="section-title text-4xl font-bold text-slate-100">Power BI Projects</h2>
+        <p class="mt-4 text-slate-400">Interactive dashboards and business intelligence solutions.</p>
+    </div>
+    <div class="text-center mb-12">
+        <a href="{{ url_for('projects') }}" class="nav-button font-semibold text-teal-300 border border-teal-300 rounded-full py-2 px-6 hover:bg-teal-300/10 transition-colors">&larr; Back to Categories</a>
+    </div>
+    <div class="space-y-8 max-w-4xl mx-auto">
+        <!-- Add your Power BI projects here -->
+    </div>
+</section>
+{% endblock %}
